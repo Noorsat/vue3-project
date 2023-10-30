@@ -1,18 +1,20 @@
 <template>
     <div>
-        <input 
+        <my-input 
             type="text" 
             placeholder="Title"
             v-model="post.title"
         /> 
-        <input 
+        <my-input 
             type="text" 
             placeholder="Body" 
             v-model="post.body"
         />
-        <button
+        <my-button
             @click="createPost"
-        >Create</button>
+        >
+            Create
+        </my-button>
     </div>
 </template>
 
